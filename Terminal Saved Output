@@ -1,0 +1,123 @@
+Last login: Wed Aug 29 19:22:17 on ttys000
+Toms-MacBook-Pro:~ tomkerckhaert$ cd Downloads
+Toms-MacBook-Pro:Downloads tomkerckhaert$ 
+Display all 1385 possibilities? (y or n)
+Toms-MacBook-Pro:Downloads tomkerckhaert$ 
+Toms-MacBook-Pro:Downloads tomkerckhaert$ cd Code Academy
+-bash: cd: Code: No such file or directory
+Toms-MacBook-Pro:Downloads tomkerckhaert$ 
+Display all 1385 possibilities? (y or n)
+Toms-MacBook-Pro:Downloads tomkerckhaert$ ls
+Bronlogo_Kombuys.ai		Keynote_Lean-Startup.key
+Bronlogo_Kombuys.png		Portret_Tom_Openr.jpg
+Code Academy			excursion.png
+Factuur_CodeAcademy-265611.pdf	excursion_redline.png
+Toms-MacBook-Pro:Downloads tomkerckhaert$ cd Code Academy
+-bash: cd: Code: No such file or directory
+Toms-MacBook-Pro:Downloads tomkerckhaert$ cd Code\ Academy/
+Toms-MacBook-Pro:Code Academy tomkerckhaert$ mkdir Excursion
+Toms-MacBook-Pro:Code Academy tomkerckhaert$ cd Excursion
+Toms-MacBook-Pro:Excursion tomkerckhaert$ touch index.html
+Toms-MacBook-Pro:Excursion tomkerckhaert$ mkdir CSS
+Toms-MacBook-Pro:Excursion tomkerckhaert$ mkdir Resources
+Toms-MacBook-Pro:Excursion tomkerckhaert$ cd CSS
+Toms-MacBook-Pro:CSS tomkerckhaert$ touch style.css
+Toms-MacBook-Pro:CSS tomkerckhaert$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Toms-MacBook-Pro:CSS tomkerckhaert$ ../
+-bash: ../: is a directory
+Toms-MacBook-Pro:CSS tomkerckhaert$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Toms-MacBook-Pro:CSS tomkerckhaert$ ls
+style.css
+Toms-MacBook-Pro:CSS tomkerckhaert$ ../
+-bash: ../: is a directory
+Toms-MacBook-Pro:CSS tomkerckhaert$ ../
+-bash: ../: is a directory
+Toms-MacBook-Pro:CSS tomkerckhaert$ ls
+style.css
+Toms-MacBook-Pro:CSS tomkerckhaert$ cd ../
+Toms-MacBook-Pro:Excursion tomkerckhaert$ ls
+CSS		Resources	index.html
+Toms-MacBook-Pro:Excursion tomkerckhaert$ ls
+index.html	resources
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git init
+Initialized empty Git repository in /Users/tomkerckhaert/Downloads/Code Academy/Excursion/.git/
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git add index.html
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git add style.css
+fatal: pathspec 'style.css' did not match any files
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git add all
+fatal: pathspec 'all' did not match any files
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git add -A
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git commit -m "first commit"
+[master (root-commit) ad59c6c] first commit
+ Committer: Tom Kerckhaert <tomkerckhaert@Toms-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 index.html
+ create mode 100644 resources/.DS_Store
+ create mode 100644 resources/css/style.css
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git remote add origin https://github.com/krulletom/excursion.git
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git push -u origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/krulletom/excursion.git/' not found
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git remote add origin https://github.com/Krulletom/excursion.git
+fatal: remote origin already exists.
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git push -u origin master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 1.67 KiB | 857.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/krulletom/excursion.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git add <index.html>
+-bash: syntax error near unexpected token `newline'
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git add index.html
+Toms-MacBook-Pro:Excursion tomkerckhaert$ ls
+index.html	resources
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git commit "Add boilerplate HTML"
+error: pathspec 'Add boilerplate HTML' did not match any file(s) known to git.
+Toms-MacBook-Pro:Excursion tomkerckhaert$ cd index.html
+-bash: cd: index.html: Not a directory
+Toms-MacBook-Pro:Excursion tomkerckhaert$ nano index.html
+Toms-MacBook-Pro:Excursion tomkerckhaert$ git commit index.html
+
+Creating the first HTML
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Tom Kerckhaert <tomkerckhaert@Toms-MacBook-Pro.local>
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#       modified:   index.html
+#
+# Changes not staged for commit:
+#       modified:   resources/.DS_Store
+#
+# Untracked files:
+#       resources/images/
+#       resources/video/
+#
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
